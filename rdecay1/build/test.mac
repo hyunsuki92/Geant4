@@ -1,0 +1,23 @@
+/control/verbose 2
+/run/verbose 1
+#
+/gun/particle ion
+/gun/ion 27 60
+#
+#/rdecay01/fullChain true
+#
+#/analysis/setFileName test
+/analysis/h1/set 0  200  0. 2000 keV	#detector edep
+#/analysis/h1/set 1  100  0. 3000 keV    #detector edep
+
+#/analysis/ntuple/setActivation 0 true
+#
+#/rdecay01/event/printModulo 10000
+#  
+/run/beamOn 100000
+
+#limit the chain
+#
+###/grdm/nucleusLimits 234 238 90 92
+#
+###/run/beamOn 1
